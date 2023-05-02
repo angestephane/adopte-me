@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "didot";
+  src: local("GFSDidot-Regular"),
+    url("./fonts/GFS_Didot/GFSDidot-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #023047;
+  color: #ededed;
+  font-family: "didot", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  margin-top: 2rem;
+
+}
+
+/*
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+*/
+
+.liste-animaux {
+  margin-top: 2rem;
+}
