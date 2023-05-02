@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import "./animal.css";
+import './animal.css';
 
 const Animal = ({ name, animal, breed, images, location, id }) => {
-  let hero = "http://pets-images.dev-apis.com/pets/none.jpg";
+  let hero = 'http://pets-images.dev-apis.com/pets/none.jpg';
 
   if (images.length) {
     hero = images[0];
@@ -12,7 +12,9 @@ const Animal = ({ name, animal, breed, images, location, id }) => {
     <div className="figure">
       <figure>
         <Link to={`/details/${id}`}>
-          <div className="image-animal"></div>
+          <div className="image-animal">
+            <img src={hero} />
+          </div>
         </Link>
         <figcaption>
           <h2>{name}</h2>

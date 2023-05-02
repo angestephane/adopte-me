@@ -1,7 +1,10 @@
 form {
   display: flex;
   flex-direction: column;
-
+  padding: 2rem 0;
+  margin: 0 1rem;
+  background-color: #01bafe;
+  color: #020202;
 }
 
 form label {
@@ -11,11 +14,8 @@ form label {
 form>div {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 8px 20px;
 }
-
-
-
 
 form input[type="text"],
 form select {
@@ -23,20 +23,27 @@ form select {
   border: none;
   border-radius: 3px;
   outline: none;
-  background-color: #fff;
+  background-color: #fefefe;
   color: #023047;
   min-width: 80%;
 }
 
-input[type="text"]:focus {
-  border: 3px solid #023047;
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border: none;
 }
 
+select .options {
+  position: absolute;
+  width: 100px;
+  z-index: 1;
+}
 
 form button {
   cursor: pointer;
   padding: 10px 10px;
-  margin: 1rem auto;
+  margin: 0 auto;
   border: none;
   border-radius: 3px;
   outline: none;
@@ -46,11 +53,10 @@ form button {
 @media (min-width: 800px) {
   form {
     display: flex;
-    flex-basis: 76%;
-    justify-content: center;
+    flex-direction: column;
+    flex-basis: 23%;
+    align-items: center;
     flex-flow: row wrap;
-    gap: 4%;
-    padding: 5rem 3rem;
     box-shadow: 18px 14px 11px 0px rgba(0, 0, 0, 0.29);
     -webkit-box-shadow: 18px 14px 11px 0px rgba(0, 0, 0, 0.29);
     -moz-box-shadow: 18px 14px 11px 0px rgba(0, 0, 0, 0.29);
@@ -58,11 +64,9 @@ form button {
 
   form>div {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4%;
-    flex-basis: 24%;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 100%;
   }
 
   form label {
@@ -77,8 +81,6 @@ form button {
 
   form input[type="text"],
   form select {
-
     margin: 0rem;
-
   }
 }

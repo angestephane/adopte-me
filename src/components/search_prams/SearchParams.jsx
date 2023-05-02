@@ -1,50 +1,41 @@
-import React, { useState, useContext } from "react";
-import { useQuery } from "@tanstack/react-query";
+import React, { useState, useContext } from 'react';
+import { useQuery } from '@tanstack/react-query';
 
-import ResultSearch from "../display_search_result/ResultSearch";
-import AdoptedPetContext from "../../utility/adoptedPetContext";
+import ResultSearch from '../display_search_result/ResultSearch';
+import AdoptedPetContext from '../../utility/adoptedPetContext';
 
-import useBreedList from "../../hooks/useBreedList";
-import fetchSearch from "../../utility/fetchSearch";
-import "./SearchParams.css";
+import useBreedList from '../../hooks/useBreedList';
+import fetchSearch from '../../utility/fetchSearch';
+import './SearchParams.css';
 
-const ANIMALS = ["cat", "dog", "bird", "rabbit", "reptile"];
+const ANIMALS = ['cat', 'dog', 'bird', 'rabbit', 'reptile'];
 
 const SearchParams = (props) => {
   const [requestParams, setRequestParams] = useState({
-    animal: "",
-    lieu: "",
-    race: "",
+    animal: '',
+    lieu: '',
+    race: '',
   });
-  const [_animal, setAnimal] = useState("");
+  const [_animal, setAnimal] = useState('');
   const [races] = useBreedList(_animal);
 
   const [adoptedPet, _] = useContext(AdoptedPetContext);
 
-  const results = useQuery(["search", requestParams], fetchSearch);
+  const results = useQuery(['search', requestParams], fetchSearch);
   const pets = results?.data?.pets ?? [];
 
   const obj = {};
 
   return (
     <div className="container">
-      <div>
-        {adoptedPet ? (
-          <div>
-            vous avez adopté {adoptedPet.name}
-            <img src={adoptedPet.images[0]} alt={adoptedPet.name} />
-          </div>
-        ) : null}
-      </div>
-
       <div className="row">
         <form
           onSubmit={(e) => {
             e.preventDefault();
             const formData = new FormData(e.target);
-            obj.animal = formData.get("animal") ?? "";
-            obj.lieu = formData.get("lieu") ?? "";
-            obj.race = formData.get("race") ?? "";
+            obj.animal = formData.get('animal') ?? '';
+            obj.lieu = formData.get('lieu') ?? '';
+            obj.race = formData.get('race') ?? '';
             setRequestParams(obj);
           }}
         >
@@ -72,7 +63,7 @@ const SearchParams = (props) => {
             >
               <option />
               {ANIMALS.map((animal) => (
-                <option key={animal} value={animal}>
+                <option className="options" key={animal} value={animal}>
                   {animal}
                 </option>
               ))}
@@ -90,7 +81,7 @@ const SearchParams = (props) => {
             <select id="race" name="race" disabled={races.length === 0}>
               <option />
               {races.map((item) => (
-                <option key={item} value={item}>
+                <option className="options" key={item} value={item}>
                   {item}
                 </option>
               ))}
@@ -99,6 +90,19 @@ const SearchParams = (props) => {
 
           <button>Rechercher</button>
         </form>
+
+        {adoptedPet ? (
+          <div className="figure">
+            <figure>
+              <div className="image-animal">
+                <img src={adoptedPet.images[0]} alt={adoptedPet.name} />
+              </div>
+              <figcaption>
+                <h2>vous avez adopté {adoptedPet.name}</h2>
+              </figcaption>
+            </figure>
+          </div>
+        ) : null}
       </div>
 
       <ResultSearch pets={pets} />

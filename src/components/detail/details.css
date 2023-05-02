@@ -5,13 +5,6 @@
     margin-top: 15rem;
 }
 
-.detail-pet {
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .error-message {
     margin: 10px auto;
     display: flex;
@@ -23,12 +16,6 @@
 .error-message h1 {
     font-size: 1rem;
     font-weight: 200;
-}
-
-.detail-pet .pet-description {
-    max-width: 100%;
-    font-size: 1.3rem;
-    line-height: 1.5;
 }
 
 #modal {
@@ -91,4 +78,12 @@
     font-size: 0.875rem;
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    .detail-pet {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
 }

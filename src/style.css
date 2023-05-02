@@ -16,14 +16,14 @@ body {
 }
 
 body {
-  background-color: #023047;
-  color: #ededed;
+  background-color: #fefefe;
+  color: #7a7979;
   font-family: "didot", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header a {
   text-align: center;
-  color: white;
+  color: #7a7979;
   text-decoration: none;
 }
 
