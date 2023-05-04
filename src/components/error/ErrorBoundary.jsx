@@ -1,5 +1,5 @@
-import { Component } from "react";
-import { Link } from "react-router-dom";
+import { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class ErrorBoundary extends Component {
   state = {
@@ -16,11 +16,7 @@ class ErrorBoundary extends Component {
    * @param {*} info Les informations sur l'erreur fournie par React
    */
   componentDidCatch(error, info) {
-    console.error(
-      "Erreur capturée par le component ErrorBoundary : ",
-      error,
-      info
-    );
+    console.error('Erreur capturée par le component ErrorBoundary : ', error, info);
   }
 
   render() {
@@ -28,7 +24,7 @@ class ErrorBoundary extends Component {
       return (
         <div>
           <h1>Désolé... Nous allons réparer ça.</h1>
-          <Link to="/" style={{ color: "white" }}>
+          <Link to="/" style={{ color: '#001219' }}>
             Cliquez ici pour retourner à la page d'accueil
           </Link>
         </div>
