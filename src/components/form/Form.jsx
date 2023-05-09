@@ -1,16 +1,16 @@
 import React, { useState, useContext } from 'react';
 import { useQuery } from '@tanstack/react-query';
 
-import ResultSearch from '../display_search_result/ResultSearch';
+import PetList from '../pet_list/PetList';
 import AdoptedPetContext from '../../utility/adoptedPetContext';
 
 import useBreedList from '../../hooks/useBreedList';
 import fetchSearch from '../../utility/fetchSearch';
-import './SearchParams.css';
+import './form.css';
 
 const ANIMALS = ['cat', 'dog', 'bird', 'rabbit', 'reptile'];
 
-const SearchParams = (props) => {
+const FormToFilterPet = (props) => {
   const [requestParams, setRequestParams] = useState({
     animal: '',
     lieu: '',
@@ -105,9 +105,9 @@ const SearchParams = (props) => {
         ) : null}
       </div>
 
-      <ResultSearch pets={pets} />
+      <PetList pets={pets} />
     </div>
   );
 };
 
-export default SearchParams;
+export default FormToFilterPet;

@@ -3,16 +3,16 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 
 import AdoptedPetContext from '../../utility/adoptedPetContext';
-import Chargement from '../spinner/Chargement';
+import Chargement from '../UI/spinner/Chargement';
 import PetCard from '../pet_card/PetCard';
 import Modal from '../modal/Modal';
 
 import fetchPet from '../../utility/fetchPet';
 
-import './details.css';
+import './pet_detail.css';
 import ErrorBoundary from '../error/ErrorBoundary';
 
-const Details = () => {
+const PetDetails = () => {
   const [modal, setModal] = useState(false);
   const [_, setAdoptedPet] = useContext(AdoptedPetContext);
 
@@ -92,7 +92,7 @@ const Details = () => {
 function DetailErrorBoundary(props) {
   return (
     <ErrorBoundary>
-      <Details {...props} />
+      <PetDetails {...props} />
     </ErrorBoundary>
   );
 }

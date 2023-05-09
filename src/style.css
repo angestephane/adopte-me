@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "didot";
   src: local("GFSDidot-Regular"),
@@ -19,27 +23,4 @@ body {
   background-color: #fefefe;
   color: #7a7979;
   font-family: "didot", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-header a {
-  text-align: center;
-  color: #7a7979;
-  text-decoration: none;
-}
-
-header {
-  margin-top: 2rem;
-
-}
-
-/*
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-*/
-
-.liste-animaux {
-  margin-top: 2rem;
 }

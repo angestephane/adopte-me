@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 
-import { Link, BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { createRoot } from 'react-dom/client';
 
-import SearchParams from './components/search_prams/SearchParams';
-import DetailErrorBoundary from './components/detail/Details';
+import FormToFilterPet from './components/form/Form';
+import DetailErrorBoundary from './components/detail/Pet_detail';
 
 import AdoptedPetContext from './utility/adoptedPetContext';
+import Header from './components/header/Header';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -24,15 +25,10 @@ const App = () => {
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <AdoptedPetContext.Provider value={adoptedPet}>
-          <header>
-            <Link to="/">
-              <h2>Adopte Moi !</h2>
-            </Link>
-          </header>
-
+          <Header />
           <Routes>
             <Route path="/details/:id" element={<DetailErrorBoundary />} />
-            <Route path="/" element={<SearchParams />} />
+            <Route path="/" element={<FormToFilterPet />} />
           </Routes>
         </AdoptedPetContext.Provider>
       </QueryClientProvider>

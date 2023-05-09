@@ -1,15 +1,15 @@
-import React from "react";
-import "./resultSearch.css";
-import Animal from "../animal/Animal";
+import React from 'react';
+import './petList.css';
+import Pet from '../pet/Pet';
 
-const ResultSearch = ({ pets }) => {
+const PetList = ({ pets }) => {
   return (
     <div className="row">
       {!pets.length ? (
         <h2 className="not-found-pets">Aucun animal trouvé</h2>
       ) : (
         pets.map((animal) => (
-          <Animal
+          <Pet
             key={animal.id}
             id={animal.id}
             name={animal.name}
@@ -24,4 +24,4 @@ const ResultSearch = ({ pets }) => {
   );
 };
 
-export default ResultSearch;
+export default PetList;
