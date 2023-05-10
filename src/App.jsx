@@ -9,6 +9,7 @@ import DetailErrorBoundary from './components/detail/Pet_detail';
 
 import AdoptedPetContext from './utility/adoptedPetContext';
 import Header from './components/header/Header';
+import Hero from './components/hero/Hero';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -27,6 +28,7 @@ const App = () => {
         <AdoptedPetContext.Provider value={adoptedPet}>
           <div className="min-h-screen bg-gray-100 min-w-screen">
             <Header />
+            <Hero />
             <Routes>
               <Route path="/details/:id" element={<DetailErrorBoundary />} />
               <Route path="/" element={<FormToFilterPet />} />
