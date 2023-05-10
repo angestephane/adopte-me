@@ -25,11 +25,13 @@ const App = () => {
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <AdoptedPetContext.Provider value={adoptedPet}>
-          <Header />
-          <Routes>
-            <Route path="/details/:id" element={<DetailErrorBoundary />} />
-            <Route path="/" element={<FormToFilterPet />} />
-          </Routes>
+          <div className="min-h-screen bg-gray-100 min-w-screen">
+            <Header />
+            <Routes>
+              <Route path="/details/:id" element={<DetailErrorBoundary />} />
+              <Route path="/" element={<FormToFilterPet />} />
+            </Routes>
+          </div>
         </AdoptedPetContext.Provider>
       </QueryClientProvider>
     </BrowserRouter>
