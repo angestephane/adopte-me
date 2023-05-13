@@ -9,7 +9,7 @@ import rabbit from '../../../public/assets/img/rabbit-01.jpg';
 const Hero = () => {
   return (
     <>
-      <section className="text-black body-font mb-40">
+      <section className="text-black body-font mb-10">
         <div class="container mx-auto flex px-10 py-5 md:flex-row flex-col items-center">
           <div class="lg:flex-grow flex flex-col md:w-10 md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 class="title-font tracking-wide sm:text-3xl md:text-6xl xl:text-7xl mb-4 font-bold ">
