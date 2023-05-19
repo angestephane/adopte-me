@@ -1,10 +1,12 @@
-import dog2 from '../../../public/assets/img/dog-02.jpg';
-import dog4 from '../../../public/assets/img/dog-04.jpg';
-import bird02 from '../../../public/assets/img/bird-02.jpg';
-import cat01 from '../../../public/assets/img/cat-01.jpg';
-import cat03 from '../../../public/assets/img/cat-03.jpg';
-import cameleon01 from '../../../public/assets/img/cameleon-01.jpg';
-import rabbit from '../../../public/assets/img/rabbit-01.jpg';
+import { Link } from 'react-router-dom';
+
+import dog2 from '../../../../public/assets/img/dog-02.jpg';
+import dog4 from '../../../../public/assets/img/dog-04.jpg';
+import bird02 from '../../../../public/assets/img/bird-02.jpg';
+import cat01 from '../../../../public/assets/img/cat-01.jpg';
+import cat03 from '../../../../public/assets/img/cat-03.jpg';
+import cameleon01 from '../../../../public/assets/img/cameleon-01.jpg';
+import rabbit from '../../../../public/assets/img/rabbit-01.jpg';
 
 const Hero = () => {
   return (
@@ -22,9 +24,11 @@ const Hero = () => {
               Vous hésitez encore ? Nos animaux recoivent les meilleurs traitements.
             </p>
             <div class="flex justify-center">
-              <button class="inline-flex text-white bg-blue-500 py-2 px-4 focus:outline-none hover:bg-opacity-80 rounded text-sm">
-                Adopter maintenant
-              </button>
+              <Link to="/list-pet">
+                <button class="inline-flex text-white bg-blue-500 py-2 px-4 focus:outline-none hover:bg-opacity-80 rounded text-sm">
+                  Adopter maintenant
+                </button>
+              </Link>
             </div>
           </div>
           <div

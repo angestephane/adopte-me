@@ -1,4 +1,4 @@
-import agenceImage from '../../../public/assets/img/agence-image.jpg';
+import agenceImage from '../../../../public/assets/img/agence-image.jpg';
 
 const About = () => {
   return (
@@ -26,9 +26,7 @@ const About = () => {
                 <div className="w-full md:w-6/12 px-4">
                   <div className="relative flex flex-col mt-4">
                     <div className="px-4 py-5 flex-auto">
-                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                        <i className="fas fa-sitemap"></i>
-                      </div>
+                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"></div>
                       <h6 className="text-xl mb-1 font-semibold">CSS Components</h6>
                       <p className="mb-4 text-blueGray-500">
                         Notus JS comes with a huge number of Fully Coded CSS components.

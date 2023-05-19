@@ -7,10 +7,10 @@ import { createRoot } from 'react-dom/client';
 import FormToFilterPet from './components/form/Form';
 import DetailErrorBoundary from './components/detail/Pet_detail';
 
+import Home from './pages/Home/Home';
+
 import AdoptedPetContext from './utility/adoptedPetContext';
 import Header from './components/header/Header';
-import Hero from './components/hero/Hero';
-import About from './components/about/About';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -30,11 +30,10 @@ const App = () => {
           <div className="min-h-screen bg-gray-100 min-w-screen">
             <Header />
             <Routes>
-              <Route path="/" element={<Hero />} />
+              <Route path="/" element={<Home />} />
               <Route path="/details/:id" element={<DetailErrorBoundary />} />
-              <Route path="/" element={<FormToFilterPet />} />
+              <Route path="/list-pet" element={<FormToFilterPet />} />
             </Routes>
-            <About />
           </div>
         </AdoptedPetContext.Provider>
       </QueryClientProvider>
