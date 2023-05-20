@@ -1,8 +1,12 @@
+/* set height or nothing will display. Width is 100% by default */
+/*
 figure div {
-  /* set height or nothing will display. Width is 100% by default */
+  
   min-height: 150px;
 }
+*/
 
+/*
 img {
   width: 100%;
 }
@@ -36,3 +40,4 @@ img {
   }
 
 }
+*/

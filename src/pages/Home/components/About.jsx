@@ -27,7 +27,7 @@ const About = () => {
                   <div className="relative flex flex-col mt-4">
                     <div className="px-4 py-5 flex-auto">
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"></div>
-                      <h6 className="text-xl mb-1 font-semibold">CSS Components</h6>
+                      <h6 className="text-xl mb-1 font-semibold">Choix 1</h6>
                       <p className="mb-4 text-blueGray-500">
                         Notus JS comes with a huge number of Fully Coded CSS components.
                       </p>
@@ -35,10 +35,10 @@ const About = () => {
                   </div>
                   <div className="relative flex flex-col min-w-0">
                     <div className="px-4 py-5 flex-auto">
-                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-violet-400">
                         <i className="fas fa-drafting-compass"></i>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">JavaScript Components</h6>
+                      <h6 className="text-xl mb-1 font-semibold">Choix 2</h6>
                       <p className="mb-4 text-blueGray-500">
                         We also feature many dynamic components for React, NextJS, Vue and Angular.
                       </p>
@@ -48,10 +48,10 @@ const About = () => {
                 <div className="w-full md:w-6/12 px-4">
                   <div className="relative flex flex-col min-w-0 mt-4">
                     <div className="px-4 py-5 flex-auto">
-                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-rose-400">
                         <i className="fas fa-newspaper"></i>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">Pages</h6>
+                      <h6 className="text-xl mb-1 font-semibold">Choix 3</h6>
                       <p className="mb-4 text-blueGray-500">
                         This extension also comes with 3 sample pages. They are fully coded so you
                         can start working instantly.
@@ -60,10 +60,10 @@ const About = () => {
                   </div>
                   <div className="relative flex flex-col min-w-0">
                     <div className="px-4 py-5 flex-auto">
-                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                      <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-amber-400">
                         <i className="fas fa-file-alt"></i>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">Documentation</h6>
+                      <h6 className="text-xl mb-1 font-semibold">Choix 4</h6>
                       <p className="mb-4 text-blueGray-500">
                         Built by developers for developers. You will love how easy is to to work
                         with Notus JS.
@@ -75,34 +75,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        <footer className="relative bg-blueGray-50 pt-8 pb-6 mt-2">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap items-center md:justify-between justify-center">
-              <div className="w-full md:w-6/12 px-4 mx-auto text-center">
-                <div className="text-sm text-blueGray-500 font-semibold py-1">
-                  Made with{' '}
-                  <a
-                    href="https://www.creative-tim.com/product/notus-js"
-                    className="text-blueGray-500 hover:text-gray-800"
-                    target="_blank"
-                  >
-                    Notus JS
-                  </a>{' '}
-                  by{' '}
-                  <a
-                    href="https://www.creative-tim.com"
-                    className="text-blueGray-500 hover:text-blueGray-800"
-                    target="_blank"
-                  >
-                    {' '}
-                    Creative Tim
-                  </a>
-                  .
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
       </section>
     </>
   );

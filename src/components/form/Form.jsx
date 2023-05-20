@@ -22,10 +22,11 @@ const FormToFilterPet = (props) => {
   const [adoptedPet, _] = useContext(AdoptedPetContext);
 
   const results = useQuery(['search', requestParams], fetchSearch);
+  console.log(results);
   const pets = results?.data?.pets ?? [];
 
   const obj = {};
-
+  console.log(pets);
   return (
     <div className="container">
       <div className="row">

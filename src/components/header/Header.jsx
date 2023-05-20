@@ -29,7 +29,7 @@ const Header = () => {
           <div className="items-center h-full">
             <Link
               to="/"
-              className="px-4 py-2 md:text-xs text-[10px] font-bold text-white uppercase transition-all duration-150 bg-blue-500 rounded shadow outline-none active:bg-blue-600 hover:shadow-md focus:outline-none ease"
+              className="px-4 py-2 md:text-xs text-[10px] font-bold text-white uppercase transition-all duration-150 bg-teal-400 rounded shadow outline-none active:bg-teal-600 hover:shadow-md focus:outline-none ease"
             >
               Faire adopter son animal
             </Link>
