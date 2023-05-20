@@ -7,7 +7,7 @@ const Pet = ({ name, animal, breed, images, location, id }) => {
     hero = images[0];
   }
   return (
-    <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+    <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform">
       <div class="relative h-3/5 flex items-end overflow-hidden rounded-xl">
         <img src={hero} />
       </div>
@@ -19,7 +19,7 @@ const Pet = ({ name, animal, breed, images, location, id }) => {
         </p>
 
         <div class="mt-3 flex items-end justify-end">
-          <div class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1 text-white duration-100 hover:bg-blue-600">
+          <div class="flex items-center space-x-1.5 rounded-lg bg-teal-500 px-4 py-1 text-white duration-100 hover:opacity-80">
             <Link to={`/details/${id}`}>
               <button class="text-sm">voir detail</button>
             </Link>
