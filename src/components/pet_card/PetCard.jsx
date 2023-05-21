@@ -1,5 +1,5 @@
-import Carousel from "../carrousel/Carousel";
-import "./petCard.css";
+import Carousel from '../carrousel/Carousel';
+import './petCard.css';
 
 const PetCard = ({ image, name, breed, city, state, description, onClick }) => {
   return (
@@ -12,7 +12,7 @@ const PetCard = ({ image, name, breed, city, state, description, onClick }) => {
 
         <p className="desc">{description}</p>
 
-        <button onClick={onClick} className="action">
+        <button onClick={onClick} className="action bg-teal-500">
           Adopte {name}
           <span aria-hidden="true">→</span>
         </button>

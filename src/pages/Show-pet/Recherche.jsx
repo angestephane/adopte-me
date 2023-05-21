@@ -1,7 +1,7 @@
 import FormToFilterPet from '../../components/form/Form';
 
-const PetList = () => {
+const Recherche = () => {
   return <FormToFilterPet />;
 };
 
-export default PetList;
+export default Recherche;

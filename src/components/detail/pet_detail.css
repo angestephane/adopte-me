@@ -41,7 +41,6 @@
     padding: 15px;
     text-align: center;
     border-radius: 10px;
-    background: #faeff0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,14 +66,14 @@
     line-height: 1.25rem;
     font-weight: 500;
     align-items: center;
-    background-color: #023047;
+
     padding: 4px 8px;
     border-radius: 2px;
 }
 
 .option .no {
     border: none;
-    color: #023047;
+
     font-size: 0.875rem;
     text-decoration: underline;
     cursor: pointer;

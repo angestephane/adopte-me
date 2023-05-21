@@ -24,7 +24,7 @@ const Hero = () => {
               Vous hésitez encore ? Nos animaux recoivent les meilleurs traitements.
             </p>
             <div class="flex justify-center">
-              <Link to="/list-pet">
+              <Link to="/animal/recherche">
                 <button class="inline-flex text-white bg-teal-400 py-2 px-4 focus:outline-none hover:bg-opacity-80 rounded text-sm">
                   Adopter maintenant
                 </button>

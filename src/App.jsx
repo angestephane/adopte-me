@@ -12,7 +12,7 @@ import Home from './pages/Home/Home';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/footer';
-import PetList from './pages/Show-pet/PetList';
+import Recherche from './pages/Show-pet/Recherche';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -34,7 +34,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/details/:id" element={<DetailErrorBoundary />} />
-              <Route path="/list-pet" element={<PetList />} />
+              <Route path="/animal/recherche" element={<Recherche />} />
             </Routes>
             <Footer />
           </div>

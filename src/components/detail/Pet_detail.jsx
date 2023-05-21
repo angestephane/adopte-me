@@ -69,15 +69,15 @@ const PetDetails = () => {
               <h1>Aimeriez adopter {pet.name}?</h1>
               <div className="option">
                 <button
-                  className="yes"
+                  className="yes bg-teal-500"
                   onClick={() => {
                     setAdoptedPet(pet);
-                    navigate('/');
+                    navigate('/animal/recherche');
                   }}
                 >
                   Oui
                 </button>
-                <button className="no" onClick={() => setModal(false)}>
+                <button className="no text-black" onClick={() => setModal(false)}>
                   Je vais encore réfléchir
                 </button>
               </div>
