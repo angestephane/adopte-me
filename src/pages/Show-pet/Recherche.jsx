@@ -1,7 +1,7 @@
-import FormToFilterPet from '../../components/form/Form';
+import Filter from './components/Filter/Filter';
 
 const Recherche = () => {
-  return <FormToFilterPet />;
+  return <Filter />;
 };
 
 export default Recherche;

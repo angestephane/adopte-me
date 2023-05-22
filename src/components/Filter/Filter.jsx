@@ -1,16 +1,16 @@
 import React, { useState, useContext } from 'react';
 import { useQuery } from '@tanstack/react-query';
 
-import PetList from '../../pages/Show-pet/components/PetList';
-import AdoptedPetContext from '../../utility/adoptedPetContext';
+import PetList from '../PetList';
+import AdoptedPetContext from '../../../../utility/adoptedPetContext';
 
-import useBreedList from '../../hooks/useBreedList';
-import fetchSearch from '../../utility/fetchSearch';
-import PetAdopted from '../UI/card/PetAdopted/PetAdopted';
+import useBreedList from '../../../../hooks/useBreedList';
+import fetchSearch from '../../../../utility/fetchSearch';
+import PetAdopted from '../../../../components/UI/card/PetAdopted/PetAdopted';
 
 const ANIMALS = ['cat', 'dog', 'bird', 'rabbit', 'reptile'];
 
-const FormToFilterPet = (props) => {
+const Filter = (props) => {
   const [requestParams, setRequestParams] = useState({
     animal: '',
     lieu: '',
@@ -114,4 +114,4 @@ const FormToFilterPet = (props) => {
   );
 };
 
-export default FormToFilterPet;
+export default Filter;
