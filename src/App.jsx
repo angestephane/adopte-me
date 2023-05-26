@@ -24,6 +24,25 @@ const queryClient = new QueryClient({
   },
 });
 
+const ROUTES_ELEMENTS = [
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/details/:id",
+    element: <DetailErrorBoundary />,
+  },
+  {
+    path: "/animal/recherche",
+    element: <Recherche />,
+  },
+  {
+    path: "/admin",
+    element: <Admin />,
+  },
+];
+
 const App = () => {
   const adoptedPet = useState(null);
   return (
@@ -36,6 +55,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/details/:id" element={<DetailErrorBoundary />} />
               <Route path="/animal/recherche" element={<Recherche />} />
+
               <Route path="/admin" element={<Admin />} />
             </Routes>
             <Footer />
