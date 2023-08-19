@@ -1,12 +1,19 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-const TestCarousel = ({ image }) => {
+const Carousel = ({ image }) => {
   const [active, setActive] = useState(0);
   return (
-    <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+    <div
+      id="indicators-carousel"
+      class="relative w-full"
+      data-carousel="static"
+    >
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
         {}
-        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+        <div
+          class="hidden duration-700 ease-in-out"
+          data-carousel-item="active"
+        >
           <img
             src="/docs/images/carousel/carousel-1.svg"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
@@ -137,4 +144,4 @@ const TestCarousel = ({ image }) => {
   );
 };
 
-export default TestCarousel;
+export default Carousel;

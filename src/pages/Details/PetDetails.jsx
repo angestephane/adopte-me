@@ -1,6 +1,6 @@
-import TestCarousel from './components/TestCarousel';
+import Carousel from "./components/Carousel";
 
 const PetDetails = () => {
-  return <TestCarousel />;
+  return <Carousel />;
 };
 export default PetDetails;
